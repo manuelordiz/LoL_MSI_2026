@@ -3,7 +3,7 @@
 SELECT teams.team_id,
        teams.team,
        players.player_id,
-         players.player
+       players.player
 FROM teams
 LEFT JOIN players ON teams.team = players.team
 ORDER BY teams.team_id, players.player_id DESC
